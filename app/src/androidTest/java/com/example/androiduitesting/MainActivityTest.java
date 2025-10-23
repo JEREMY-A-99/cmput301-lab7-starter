@@ -82,6 +82,7 @@ public class MainActivityTest {
                 .perform(click());
 
         // Verify ShowActivity is launched
+        onView(withId(R.id.textView_city)).check(matches(withText("Toronto")));
     }
 
     // Test if city name is consistent in ShowActivity
